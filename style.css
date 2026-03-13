@@ -32,6 +32,24 @@ h1 {
     text-align: left; /* Typing looks better left-aligned */
     min-height: 300px; /* Prevents layout jump while typing */
 }
+/* Custom Black Circle Cursor */
+h1::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    margin-left: 10px;
+    /* Keeps the circle aligned with the center of the text */
+    vertical-align: middle; 
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
 
 /* Layout & Spacing */
 .container {
