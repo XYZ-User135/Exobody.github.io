@@ -21,12 +21,30 @@
             </nav>
         </header>
 
-        <main>
-            <section class="hero">
-                <h1>
-                    "We are a community-driven furniture design collective, crafting simple, functional pieces that anyone can build, modify, and share. Our open-source approach means every design is freely available—download the plans, source local materials, and create furniture tailored to your space. No middlemen, no markup, just honest craftsmanship and sustainable design made accessible to everyone."
-                </h1>
-            </section>
+       <main>
+    <section class="hero">
+        <h1 id="typing-text"></h1>
+    </section>
+
+    </main>
+
+<script>
+    const text = "We are a community-driven furniture design collective, crafting simple, functional pieces that anyone can build, modify, and share. Our open-source approach means every design is freely available—download the plans, source local materials, and create furniture tailored to your space. No middlemen, no markup, just honest craftsmanship and sustainable design made accessible to everyone.";
+    
+    const speed = 30; // Milliseconds between letters
+    let i = 0;
+
+    function typeWriter() {
+        if (i < text.length) {
+            document.getElementById("typing-text").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+    // Start the animation when the page loads
+    window.onload = typeWriter;
+</script>
 
             <section class="grid">
                 <div class="gray-box">
