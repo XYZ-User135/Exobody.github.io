@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Source Furniture Collective</title>
+    <style>
+        /* CSS Reset & Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-weight: 400;
+            line-height: 1.3;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Layout & Spacing */
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        header {
+            padding: 4rem 0;
+            border-bottom: 1px solid #eeeeee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .hero {
+            padding: 10rem 0;
+            text-align: center;
+        }
+
+        /* Grid for Gray Boxes */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding-bottom: 10rem;
+        }
+
+        .gray-box {
+            background-color: #f5f5f5;
+            aspect-ratio: 4 / 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .gray-box:hover {
+            background-color: #ebebeb;
+        }
+
+        .quote {
+            font-size: 1.25rem;
+            font-weight: 300;
+            font-style: italic;
+            text-align: center;
+            color: #555555;
+        }
+
+        /* Footer & Contact Info */
+        footer {
+            border-top: 1px solid #eeeeee;
+            padding: 5rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-block h3 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888888;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .footer-block p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 6rem 0;
+            }
+            .gray-box {
+                aspect-ratio: 1 / 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="brand">Collective</div>
+            <nav>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>
+                    "We are a community-driven furniture design collective, crafting simple, functional pieces that anyone can build, modify, and share. Our open-source approach means every design is freely available—download the plans, source local materials, and create furniture tailored to your space. No middlemen, no markup, just honest craftsmanship and sustainable design made accessible to everyone."
+                </h1>
+            </section>
+
+            <section class="grid">
+                <div class="gray-box">
+                    <p class="quote">"Simple, functional pieces that anyone can build."</p>
+                </div>
+                <div class="gray-box">
+                    <p class="quote">"Freely available plans for your space."</p>
+                </div>
+                <div class="gray-box">
+                    <p class="quote">"Source local materials, create locally."</p>
+                </div>
+                <div class="gray-box">
+                    <p class="quote">"No middlemen, no markup."</p>
+                </div>
+                <div class="gray-box">
+                    <p class="quote">"Honest craftsmanship."</p>
+                </div>
+                <div class="gray-box">
+                    <p class="quote">"Sustainable design made accessible."</p>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contact">
+            <div class="footer-block">
+                <h3>Email</h3>
+                <p><a href="mailto:hello@furniturecollective.com">hello@furniturecollective.com</a></p>
+            </div>
+            <div class="footer-block">
+                <h3>Mobile</h3>
+                <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+            </div>
+            <div class="footer-block">
+                <h3>Office</h3>
+                <p><a href="tel:+15559876543">+1 (555) 987-6543</a></p>
+            </div>
+            <div class="footer-block">
+                <h3>Location</h3>
+                <p>123 Minimalist Ave.<br>Design District, NY 10001</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
